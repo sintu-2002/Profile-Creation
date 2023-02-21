@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page|Saurabh Maurya</title>
+    <style>
+
+        *{
+            margin: 0px;
+            padding:0px;
+            box-sizing: border-box;
+        }
+        .heading{
+            background-color: rgb(13, 143, 255);
+            height: 70px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo{
+            /* background-color: red; */
+            height: 70px;
+            width: 10%;
+            font-size: 40px;
+            font-weight: bold;
+            padding: 8px;
+            margin-left: 50px;
+            font-family:  URW Chancery L, cursive;
+        }
+
+        .icon{
+            /* background-color: blue; */
+            height: 70px;
+            width: 20%;
+            line-height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+        .myiconimg{
+            height: 30px;
+            width: 30px;
+        }
+
+        .navbar{
+            background-color: rgba(220, 218, 218, 0.2);
+            height: 60px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .navbar,p{
+            font-size:1em;
+            font-weight: bold;
+            font-family:  URW Chancery L, cursive;
+        }
+
+        .navbtn{
+            padding: 10px;
+            width: 100%;
+            height: auto;
+            border: 2px solid rgb(235, 197, 197);
+            border-radius: 5px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-weight: bold;
+            font-family:  URW Chancery L, cursive;
+            transition: .9s;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        .navbtn:hover{
+            background-color: rgb(0, 145, 255);
+            color: white;
+            padding-left:20px;
+            padding-right: 20px;
+            font-family:  URW Chancery L, cursive;
+
+        }
+
+/* #########################  1st Div  ########################### */
+
+        .maindiv{
+            background-color: rgba(224, 224, 224, 0.6);
+            height: 550px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .maindiv-div{
+            /* background-color: red; */
+            height: 500px;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .maindiv-divcon{
+            background-color: rgba(197, 212, 250, 0.3);
+            height: 500px;
+            width: 30%;
+            border: 2px solid rgba(197, 212, 250, 0.3) ;
+        }
+
+        .divcon{
+            /* background-color:rgb(37, 149, 171); */
+            /* height: 90px; */
+        }
+
+        .imgdiv{
+            /* background-color: rgb(136, 90, 251); */
+            /* height: 200px; */
+            /* width: 210px; */
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .img-img{
+            /* background-color: pink; */
+            /* height: 100px; */
+            
+        }
+
+        .profile-img{
+            /* background-color: rgb(239, 248, 66); */
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+
+        .name{
+            /* background-color: red; */
+            margin-top: 20px;
+            text-align: center;
+            font-size: 2rem;
+
+        }
+
+        .namedetail{
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        .emailid{
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1rem;
+            padding: 5px;
+
+        }
+
+
+        .mydetails{
+            text-align: center;
+            font-size: 1rem;
+            margin-top:20px ;
+            padding: 20px;
+        }
+
+        .non-edit{
+            background-color: blue;
+            font-size: 1rem;
+            border: none;
+            padding: 5px;
+
+        }
+      
+        .sociallink{
+            /* background-color: rgb(68, 209, 216); */
+            height: 40px;
+            width: 80%;
+            margin-top: 50px;
+            align-items: center;
+            margin-left: 35px;
+            display: flex;
+            justify-content: space-evenly;
+            
+
+        }
+
+
+        .mylink{
+            height: 30px;
+            width: 30px;
+        }
+
+/* #########################    2nd div    ######################### */
+       .main-emp{
+        /* background-color: rgba(164, 164, 251,0.3); */
+        height: 500px;
+        width: 100%;
+
+       }
+
+       .emp-detail{
+            text-align: center;
+            font-size: 20px;
+           
+
+       }
+
+       .emp-detail1{
+        padding: 20px;
+        font-weight: bolder;
+
+    }
+
+    .emp-eno{
+        text-align: center;
+        margin-top: 45px;
+        font-size: 1rem;
+    }
+
+
+
+/* #####################    3rd Div   ########################### */
+
+    .edu-main{
+        /* background-color: rgba(164, 164, 251,0.3); */
+        height: 500px;
+        width: 100%;
+
+    }
+
+    .edu-detail{
+        text-align: center;
+            font-size: 20px;
+    }
+
+    .edu-detail1{
+        padding: 20px;
+        font-weight: bolder;
+    }
+
+    .edu-clg{
+        text-align: center;
+        margin-top: 45px;
+        font-size: 1rem;
+        padding: 2px;
+
+    }
+
+    /* #####################  footer  ########################### */
+
+    .footer{
+        background-color: rgb(13, 143, 255);
+        /* height: 100px; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;            
+    }
+
+    .footer-div{
+        /* background-color: red; */
+        /* height: 50px; */
+        width: 80%;
+        padding: 20px;
+    }
+
+    .footer-p{
+        padding: 30px;
+        /* font-size: 15px; */
+        font-family:  URW Chancery L, cursive;
+
+
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <div class="logo">Mylogo</div>
+        <div class="icon">
+            <img class="myiconimg" src="calender.png" alt="">
+            <img class="myiconimg" src="bell.png" alt="">
+            <img class="myiconimg" src="profile.png" alt="">
+        </div>
+    </div>
+
+    <nav class="navbar">
+       
+            <p>Application</p>
+            <p>Growth Enabling Function</p>
+            <p>Collaboration Portals</p>
+            <p><button class="navbtn">My Zone</button></p>
+            <p>External Link</p>
+            <p>Whistle Blower</p>
+       
+    </nav>
+
+    <section class="maindiv">
+        <div class="maindiv-div">
+
+<!-- 1 div -->
+
+            <div class="maindiv-divcon">
+                <div class="divcon">
+                    <div class="imgdiv">
+                        <div class="img-img">
+                            <img class="profile-img" src="saurabh.jpg" alt="Saurabh Maurya Image">
+                        </div>
+                    </div>
+                    <div class="name"><p>Saurabh Maurya</p></div>
+                    <div class="namedetail"><p>Java Developer</p></div>
+                    <div class="emailid"><p>Email : saurabhmaurya3045@gmail.com</p></div>
+                    <div class="mydetails"><P>About : Hi, I am student of Computer Science and Engineering from Bansal Institute of Research and Technology.</P></div>
+                    <div class="sociallink">
+                        
+                            <img src="images.png" alt="Email" class="mylink" />
+                            <img src="linkedin.png" alt="Email" class="mylink" />
+                            <img src="download.png" alt="Email" class="mylink" />
+                       
+                        
+                    </div>
+                </div>
+
+            </div>
+
+<!-- 2 div -->
+
+            <div class="maindiv-divcon">
+                <div class="main-emp">
+                    <div class="emp-detail"><p class="emp-detail1">Employment Details</p></div>
+                    <div class="emp-eno"><p>Employee Number : 161531</p></div>
+                    <div class="emp-eno"><p>Employee Section : Developer</p></div>
+                    <div class="emp-eno"><p>Employee Type : Full Time</p></div>
+                    <div class="emp-eno"><p>Employee Salary : 15,000</p></div>
+                    <div class="emp-eno"><p>Employment Area : FullStack</p></div>
+                    <div class="emp-eno"><p>Location : Madhya Pradesh</p></div>
+
+                </div>
+            </div>
+
+<!-- 3 div -->
+
+            <div class="maindiv-divcon">
+                <div class="edu-main">
+                    <div class="edu-detail"><p class="edu-detail1">Educational Background</p></div>
+                    <div class="edu-clg"><p>College : Bansal Institute of Research and Technology</p></div>
+                    <div class="edu-clg"><p>12<sup>th</sup> : Chitransh K.D. Memorial H/S School</p></div>
+                    <div class="edu-clg"><p>10<sup>th</sup> : Abha Vidhya Niketan School</p></div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer class="footer">
+        <div class="footer-div">
+            <p class="footer-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi animi sint eos dignissimos sit cumque perferendis cum aut molestiae exercitationem.</p>
+        </div>
+    </footer>
+    
+    
+    
+</body>
+</html>
